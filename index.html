@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors | YU-GI-OH</title>
+    
+    <!-- Reset -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="./src/styles/containers_and_frames.css">
+    <link rel="stylesheet" href="./src/styles/buttons.css">
+
+    <!-- Main -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./src/assets/icons/millenium.png" type="image/x-icon">
+</head>
+<body>
+    <div id="bgVideo">
+        <video autoplay loop muted>
+            <source src="./src/assets/video/yugi.mp4" type="video/mp4">
+        </video>
+    </div>
+    <main>
+       <div id="container-left" class="framed-golden-2">
+            <div id="placar" class="frameLeft">
+                <span>Win: 0 | Lose: 0</span>
+            </div>
+
+            <div id="selectedCard">
+                
+            </div>
+
+            <div id="descCard"  class="frameLeft">
+                <span id="cardName">Selecione</span>
+                <span id="cardType">Uma carta</span>
+            </div>
+       </div>
+
+       <div id="container-right">
+            <div id="computer-hand" class="hand framed">
+
+            </div>
+
+            <div id="table">
+                <div id="playerSelectedCard" class="cardSelected">
+                    
+                </div>
+                <div id="milleniumTable">
+                    <img src="./src/assets/icons/millenium2.png" alt="" srcset="">
+                </div>
+                <div id="computerSelectedCard" class="cardSelected">
+
+                </div>
+                <button id="btnNext" class="rpgui-button">
+                    next
+                </button>
+            </div>
+
+            <div id="player-hand" class="hand framed">
+                
+            </div>
+       </div>
+    </main>
+
+    <script src="./src/scripts/engine.js" defer></script>
+</body>
+</html>
