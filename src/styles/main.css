@@ -144,8 +144,8 @@ main > *{
 
 #table{
     margin: 10% auto;
-    height: 30vh;
-    width: 45%;
+    height: 250px;
+    width: 600px;
     padding: 2%;
     padding-left: 5%;
 }
